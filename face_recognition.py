@@ -24,8 +24,7 @@ while True:
 
         # Get the name from the id, if not Ali or Bisma, display Unknown
         name = id_to_name.get(id, "Unknown")
-        if name not in ['Alii', 'Bisma']:
-            name = "Unknown"
+        
 
         cv2.putText(frame, name, (x+5, y-5), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
 
